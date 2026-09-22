@@ -4,7 +4,7 @@ services:
     runtime: node
     plan: free
     region: ohio
-    buildCommand: cd apps/api && npm ci && npx prisma generate && npm run build
+    buildCommand: cd apps/api && npm ci --include=dev && npx prisma generate && npm run build
     startCommand: cd apps/api && npx prisma migrate deploy && node dist/index.js
     healthCheckPath: /health
     autoDeploy: true
