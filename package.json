@@ -1,0 +1,15 @@
+{
+  "name": "orbi",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ORBI — gestão completa para salões de beleza",
+  "scripts": {
+    "dev:web": "pnpm --dir apps/web dev",
+    "build:web": "pnpm --dir apps/web build",
+    "dev:api": "npm --prefix apps/api run dev",
+    "build:api": "npm --prefix apps/api run build"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
